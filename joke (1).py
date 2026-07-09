@@ -1,5 +1,6 @@
 import gradio as gr
 import requests
+import os
 FastAPI_URL = "https://joke-backend-z59m.onrender.com/joke"
 def joke(prompt,category,language):
     response=requests.post(FastAPI_URL,json={"prompt":prompt,
